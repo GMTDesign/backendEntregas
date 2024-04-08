@@ -94,6 +94,6 @@ export async function postPurchaseController (req, res) {
     const cid = req.params.cid
     const email = req.email
     const searchedCart = await cartsService.getCart(cid)
-    const newTicket = await ticketsService.postTicket(searchedCart, email)
+    const newTicket = await ticketsService.postTicket(searchedCart[0], email)
     res.json(newTicket)
 }

@@ -7,7 +7,9 @@ class ProductsService {
     }
 
     async getProduct(pid) {
-        return await productsDaoMongoose.readOne(pid)
+        console.log('ProductService ' + pid)
+        const searchedProd = await productsDaoMongoose.readOne(pid)
+        return searchedProd
     }
 
     async postProduct({title, description, code, price, status, stock, category, thumbnails}) {

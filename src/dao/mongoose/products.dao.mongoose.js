@@ -24,10 +24,12 @@ class ProductsDaoMongoose {
    }
 
    async updateOne(id, data, images) {
+      console.log(data)
       if (images) {
          const updateImages = await productManager.findById(id)
          updateImages.addThumbnail(images)
       }
+     
       const updatedProduct = await productManager.findByIdAndUpdate(id, { $set: data }, { new: true })
       return updatedProduct
    }
