@@ -29,10 +29,10 @@ class TicketsService {
             return totalAmount
         })
         console.log('total compra1 ' + totalAmount)
-
+        //totalAmount = 50
         if (totalAmount !== 0) {
             console.log('total compra2 ' + totalAmount)
-            const newTicket = await ticketsDaoMongoose.create({ amount: 50, purchaser: email })
+            const newTicket = await ticketsDaoMongoose.create({ amount: totalAmount, purchaser: email })
             return newTicket
         } else {
             return searchedCart

@@ -18,9 +18,9 @@ class TicketsDaoMongoose {
 //       return searched
 //    }
 
-   async create({ code, purchase_datetime, amount, purchaser }) {
+   async create({ amount, purchaser }) {
         console.log('amount ' + amount)
-      const newTicket = await ticketManager.create({ code, purchase_datetime, amount, purchaser })
+      const newTicket = await ticketManager.create({ amount, purchaser })
       return newTicket.toObject()
    }
 

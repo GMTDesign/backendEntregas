@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "carts",
-    "dateExported": "2024-04-06T04:45:51.305Z",
+    "dateExported": "2024-04-09T00:18:30.922Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -10,14 +10,13 @@
             "colId": "5cbe7874-233a-4716-9568-a681692d9f46",
             "containerId": "",
             "name": "obtener carrito",
-            "url": "http://localhost:8080/api/carts/38ec88c3-b176-49d2-9338-7be5d8e47f1e",
+            "url": "http://localhost:8080/api/carts/9bd8793e-0fe2-45e0-83db-489c3baf25c6",
             "method": "GET",
             "sortNum": 20000,
             "created": "2024-01-27T08:04:28.631Z",
-            "modified": "2024-03-09T17:29:58.024Z",
+            "modified": "2024-04-06T05:08:45.655Z",
             "headers": [],
             "params": [],
-            "reqType": "get",
             "tests": []
         },
         {
@@ -39,11 +38,11 @@
             "colId": "5cbe7874-233a-4716-9568-a681692d9f46",
             "containerId": "",
             "name": "agregar producto al carrito",
-            "url": "http://localhost:8080/api/carts/9bd8793e-0fe2-45e0-83db-489c3baf25c6/product/7d94cc63-85ec-44bd-94ca-dc98755c0560",
+            "url": "http://localhost:8080/api/carts/9bd8793e-0fe2-45e0-83db-489c3baf25c6/product/072caa32-b7dc-4377-8650-01d5edf89f7b",
             "method": "POST",
             "sortNum": 40000,
             "created": "2024-01-27T08:07:42.843Z",
-            "modified": "2024-04-06T04:38:56.363Z",
+            "modified": "2024-04-07T23:51:32.580Z",
             "headers": [],
             "params": [],
             "tests": []
@@ -110,6 +109,20 @@
             "sortNum": 80000,
             "created": "2024-01-27T08:19:13.631Z",
             "modified": "2024-01-27T08:19:28.041Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "254622a4-2f3f-4cae-9bd0-581a2b375eab",
+            "colId": "5cbe7874-233a-4716-9568-a681692d9f46",
+            "containerId": "",
+            "name": "purchase",
+            "url": "http://localhost:8080/api//carts/9bd8793e-0fe2-45e0-83db-489c3baf25c6/purchase",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-04-06T04:59:12.319Z",
+            "modified": "2024-04-06T05:09:14.644Z",
             "headers": [],
             "params": [],
             "tests": []
